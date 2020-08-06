@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: frontend-k8s-hands-on:v1
+        image: >-
+            image-registry.openshift-image-registry.svc:5000/my-project/nginx-example@sha256:bcbcc18165401d768e280d2b24c4ff896ad8398745c2e4f9d0ccbebf54fe60b2
         imagePullPolicy: IfNotPresent
 ---
 apiVersion: v1
